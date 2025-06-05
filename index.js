@@ -1,18 +1,28 @@
 const body =document.body;
 body.style.backgroundColor ='silver'
+body.style.fontFamily ='poppins'
+body.style.fontSize ='0.2in'
 
 
 const title =document.getElementById('title');
 title.style.color ='green'
-
+title.style.fontSize ='0.4in'
+title.style.marginTop ='20%'
+title.style.marginLeft ='11%'
+// heading.style.color ='#004526'
 
 const heading =document.getElementById('heading');
 heading.style.textTransform ='uppercase'
-
+heading.style.textAlign ='center'
+heading.style.fontSize ='0.4in'
+heading.style.color ='#004526'
+heading.style.marginTop='12%'
 
 const headings =document.getElementById('headings');
 headings.style.textTransform ='uppercase'
-
+headings.style.textAlign ='center'
+headings.style.fontSize ='0.4in'
+headings.style.color ='#004526'
 
 const fruitList =document.getElementById('fruList')
 const newLi =document.createElement('li');
@@ -27,11 +37,23 @@ const addVeg =document.createTextNode('Cabbages')
 vegLists.appendChild(addVeg);
 vegetableList.appendChild(vegLists);
 
+vegetableList.style.display = 'flex';
+vegetableList.style.gap = '55px';
+vegetableList.style.marginBottom = '16px';
+vegetableList.style.flexDirection = 'row';
+vegetableList.style.justifyContent = 'center';
+
+
+fruitList.style.display = 'flex';
+fruitList.style.gap = '55px';
+fruitList.style.marginBottom = '16px';
+fruitList.style.flexDirection = 'row';
+fruitList.style.justifyContent = 'center';
 
 const images =[
   'images/mango-removebg-preview.png',
   'images/bananas-removebg-preview.png',
-  'images/watermelon-removebg-preview.png',
+  'images/watermelon-removebg-preview.png ',
   'images/apple-removebg-preview.png',
   'images/onions-removebg-preview.png',
   'images/tomatos-removebg-preview.png',
@@ -40,7 +62,6 @@ const images =[
 ]
 const generateLi =document.querySelectorAll('ul li');
 generateLi.forEach((li,index) =>{
-    // li.style.display = 'flex';
     li.style.listStyleType ='none';
     const label =li.textContent;
 
@@ -62,9 +83,32 @@ generateLi.forEach((li,index) =>{
      li.appendChild(flexList);
 })
 
+const navList = document.querySelectorAll('a');
+navList.forEach((list) =>{
+  list.style.textDecoration ='none'
+  list.style.color ='green'
+  list.style.marginRight='3%'
+})
 
+const navigation = document.getElementById('navigation')
+navigation.style.marginLeft ='72%'
+navigation.style.marginTop ='-2.5%'
+navigation.style.fontSize ='0.18in'
+// navigation.style.gap='2px'
 
+const image =document.createElement('img')
+const anImage =document.getElementById('image')
+image.src ='images/basket-removebg-preview.png'
+anImage.style.textAlign ='center'
+anImage.style.marginTop='-15%'
+anImage.style.marginLeft='40%'
+anImage.appendChild(image)
 
+const logo =document.getElementById('logo')
+logo.style.marginLeft ='7%'
+
+const paragraph =document.getElementById('paragraph')
+paragraph.style.marginLeft ='11%'
 
 
 
