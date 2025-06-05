@@ -53,7 +53,7 @@ fruitList.style.justifyContent = 'center';
 const images =[
   'images/mango-removebg-preview.png',
   'images/bananas-removebg-preview.png',
-  'images/watermelon-removebg-preview.png ',
+  'images/melon-removebg-preview.png',
   'images/apple-removebg-preview.png',
   'images/onions-removebg-preview.png',
   'images/tomatos-removebg-preview.png',
